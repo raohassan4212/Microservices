@@ -1,0 +1,36 @@
+﻿
+What is Microservices Architecture:
+Microservice Architectureis about decomposing a Software System into autonomus Units which are independently deployable and which communicates via lightweight, language agnostic way and together they fulfill the business goal.
+
+Why Need Microservices:
+In 1960s there was a rapid growth of computing applications and software became large and complex. Computer Scientists tried to tackle the complexity of Software Systems with the ancient and proven technique: Divide and Conquer. But growth in software increase day by day computer Scientists need a new solution for their software development this problem lead to a new concept Modular Software Development  in the 1970s with the principal of decomposing a large, complex software system into “Loosely coupled, highly cohesive” modules which communicated via internal interfaces. In simple terms, “loosely coupled” means the dependency between modules should be very low and “highly cohesive” means that one module should focus on single or similar functionality. With the rise of the Internet and Web in the 1990s, software systems became widespread in business applications and became even more complex and large. Although Modularity is used to reduce the complexities of software application, it often did not help as the soft Modular boundaries of software sub-systems are easy to cross and misuse. Another Software Architecture pattern became very popular during the 1990s to develop business applications: Layered Architecture. Normally, a business Web Application is divided into several layers.
+
+There is an other popular architecture to handle the complexities of software development called Monolithic architecture. But in the late 2000s, a Cambrian Explosion happens in the software industries due to the rise of Mobile Internet (Wifi, Smartphone) and faster network. Also, software started to eat the world where along with the traditional Software/Technology companies, almost all types of companies started to develop or use software like Banking, Insurance, Restaurants, Hotels, Music, Driving, etc. Many new companies like Facebook, Twitter, Uber, Netflix, Spotify came with innovative ideas, aggressive strategy, move fast approach which leads to the exponential growth of their applications. Suddenly, Organizations and Software Engineers found that Monolithic Architecture cannot handle the challenges of Modern, Fast-Paced or Web-Scale Software development. and there comes the microservices the modern game changer software industry.
+Microservices Architecture in Detail:
+The idea is to split your application into a set of smaller, interconnected services instead of building a single monolithic application. Each microservice is a small application that has its own hexagonal architecture consisting of business logic along with various adapters. The differet between Monolithic Architecture and Microservice Architecture are below figure.
+
+The Microservice architecture pattern significantly impacts the relationship between the application and the database. Instead of sharing a single database schema with other services, each service has its own database schema. On the one hand, this approach is at odds with the idea of an enterprise-wide data model. Also, it often results in duplication of some data. However, having a database schema per service is essential if you want to benefit from microservices, because it ensures loose coupling. Each of the services has its own database. Moreover, a service can use a type of database that is best suited to its needs, the so-called polyglot persistence architecture.
+
+Features of Microservice
+The main feature of microservices.
+    • Small Focused
+    • Loosely coupled
+    • Language Flexible
+    • Bounded Context
+
+Advantageof Microservice
+The advantages of microservices seem strong enough to have convinced some big enterprise players such as Amazon, Netflix, and eBay to adopt the methodology. Compared to more monolithic design structures, microservices offer:
+    • Improved fault isolation: Larger applications can remain mostly unaffected by the failure of a single module.
+    • Eliminate vendor or technology lock-in: Microservices provide the flexibility to try out a new technology stack on an individual service as needed. There won’t be as many dependency concerns and rolling back changes becomes much easier. With less code in play, there is more flexibility.
+    • Ease of understanding: With added simplicity, developers can better understand the functionality of a service.
+    • Smaller and faster deployments: Smaller codebases and scope = quicker deployments, which also allow you to start to explore the benefits of Continuous Deployment.
+    • Scalability: Since your services are separate, you can more easily scale the most needed ones at the appropriate times, as opposed to the whole application. When done correctly, this can impact cost savings.
+Disadvantage of Microservice
+Microservices may be a hot trend, but the architecture does have drawbacks. In general, the main negative of microservices is the complexity that any distributed system has. Here’s a list of some potential pain areas and other cons associated with microservices designs:
+    • Communication between services is complex: Since everything is now an independent service, you have to carefully handle requests traveling between your modules. In one such scenario, developers may be forced to write extra code to avoid disruption. Over time, complications will arise when remote calls experience latency.
+    • More services equals more resources: Multiple databases and transaction management can be painful.
+    • Global testing is difficult: Testing a microservices-based application can be cumbersome. In a monolithic approach, we would just need to launch our WAR on an application server and ensure its connectivity with the underlying database. With microservices, each dependent service needs to be confirmed before testing can occur.
+    • Debugging problems can be harder: Each service has its own set of logs to go through. Log, logs, and more logs.
+    • Deployment challengers: The product may need coordination among multiple services, which may not be as straightforward as deploying a WAR in a container.
+    • Large vs small product companies: Microservices are great for large companies, but can be slower to implement and too complicated for small companies who need to create and iterate quickly, and don’t want to get bogged down in complex orchestration.
+
