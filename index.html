@@ -99,5 +99,34 @@
                                  as opposed to the whole application. When done correctly, this can impact cost savings.</li>
                         </ul>
 
+                        <h2>Disadvantage of Microservice</h2>
+
+                        <p>Microservices may be a hot trend, but the architecture does have drawbacks. In general,
+                             the main negative of microservices is the complexity that any distributed system has.
+                              Here’s a list of some potential pain areas and other cons associated with microservices
+                               designs:</p>
+
+                               <ul>
+                                   <li><b>Communication between services is complex:</b> Since everything is now an independent
+                                        service, you have to carefully handle requests traveling between your modules.
+                                         In one such scenario, developers may be forced to write extra code to avoid
+                                          disruption. Over time, complications will arise when remote calls experience
+                                           latency.</li>
+                                   <li><b>More services equals more resources:</b> Multiple databases and transaction management can be painful.</li>
+                                   <li><b>Global testing is difficult:</b> Testing a microservices-based application can be
+                                        cumbersome. In a monolithic approach, we would just need to launch our WAR on
+                                         an application server and ensure its connectivity with the underlying database.
+                                          With microservices, each dependent service needs to be confirmed before testing
+                                           can occur.</li>
+                                   <li><b>Debugging problems can be harder:</b> Each service has its own set of logs to go through.
+                                        Log, logs, and more logs.</li>
+                                   <li><b>Deployment challengers:</b> The product may need coordination among multiple services,
+                                        which may not be as straightforward as deploying a WAR in a container.</li>
+                                   <li><b>Large vs small product companies:</b> Microservices are great for large companies,
+                                        but can be slower to implement and too complicated for small companies who
+                                         need to create and iterate quickly, and don’t want to get bogged down in
+                                          complex orchestration.</li>
+                               </ul>
+
 </body>
 </html>
